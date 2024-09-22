@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Registration</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="register.php" method="post" onsubmit="return validateForm()">
+            <div class="user_details">
+                <div class="input_pox">
+                    <span class="datails">First Name</span>
+                    <input type="text" placeholder="enter your first name" name="firstName" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Last Name</span>
+                    <input type="text" placeholder="enter your last name" name="lastName" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Email</span>
+                    <input type="email" placeholder="enter your Email" name="email" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Phone Number</span>
+                    <input type="text" placeholder="enter your Phone" name="phoneNumber" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Password</span>
+                    <input type="password" placeholder="enter your Password" name="password" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Confirm Password</span>
+                    <input type="password" placeholder="Confirm your Password" name="confirmPassword" required>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
